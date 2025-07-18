@@ -1,0 +1,51 @@
+/* Etilo para el Blog */
+
+/*General*/
+body {
+    color: #005256;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: montserrat;
+     }
+  
+a {
+    font-weight: 600;
+    color: #005256;
+  }
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    color: white;
+    background-color: #005256;
+    text-align: center;
+  }
+/*----------------------------------*/
+
+/*Articulos*/  
+article {
+    border: solid 1px;
+    border-color: #005256;
+    text-align: center;
+    width: 20%;
+    border-radius: 25px;
+  }
+
+article > h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+/*----------------------------------*/
+
+/*Articulos cambian de color*/
+article:hover {
+    color: white;
+    background-color: #005256;
+}
+
+article:hover a {
+    color: white;
+}
+/*----------------------------------*/

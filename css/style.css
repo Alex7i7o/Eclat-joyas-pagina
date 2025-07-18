@@ -1,0 +1,272 @@
+/* Fuentes de iconos*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?nrtax7');
+  src:  url('../fonts/icomoon.eot?nrtax7#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?nrtax7') format('truetype'),
+    url('../fonts/icomoon.woff?nrtax7') format('woff'),
+    url('../fonts/icomoon.svg?nrtax7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo:before {
+  content: "\e900";
+  color: #3d1417;
+  font-size: 100px;
+}
+
+/*-------------------*/
+
+div {
+  text-align: center;
+}
+
+
+html {
+  color: #3d1417;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: "Libre Baskerville";
+  background-color: #eabcb7;
+}
+body {
+  margin: 0px;
+  padding-bottom: 80px;
+}
+
+/*header y menu*/
+header {
+  margin-top: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  
+}
+
+header nav {
+  color: #eabcb7;
+  background-color: #6d1f1f;
+  border-radius: 10px 10px 0px 0px; 
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li a {
+  padding: 10px 20px;
+  border-radius: 5px; 
+  transition: .5s ease;
+  display: block;
+  font-size: 10px;
+  text-align: center;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: #3d1417;
+  background-color: #fff0e3;
+}
+
+
+/*--------------------------------*/
+
+/*primera seccion*/
+
+.hero {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+a {
+  font-weight: 600;
+  color: #eabcb7;
+  text-decoration: none;
+}
+
+footer {
+  color: #3d1417;
+  text-align: center;
+}
+
+/*--------------------------------*/
+
+/*Categorias*/
+.categorias {
+  object-fit: cover;
+  width: 93%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff0e3;
+  border-radius: 10px;
+  margin-top: -50px;
+  position: relative;
+  z-index: 5;
+}
+
+.categorias div {
+  display: flex;
+  gap: 10px;
+  padding: 0px 10px 10px 10px;
+  justify-content: space-evenly;
+}
+
+.categorias h3 {
+  text-align: center;
+  font-family: "Dancing Script";
+  font-size: 2em;
+  margin: 0px;
+}
+
+.categorias .categoria {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0px;
+}
+
+.categorias img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.categorias p {
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  text-align: center;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-size: 10px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.categorias a{
+  position: relative;
+  display: block;
+  width: 300px; /* Ajustá según tu necesidad */
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.categoria:nth-of-type(2) a p {
+  font-size: 10px;
+}
+
+div a:hover p {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.categorias img:hover {
+  transform: scale(1.1); /* La imagen crece un 10% */
+}
+
+/*--------------------------------*/
+
+/*Productos*/
+.productos {
+  background: #a84342;
+  width: 91%;
+  height: 100%;
+  margin: 10px auto 0px auto;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+.contenedor_productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+}
+.productos h3 {
+  text-align: center;
+  color: #fff0e3;
+  margin: 0px;
+}
+
+.productos h3 strong {
+  font-family: "Dancing Script";
+  font-size: 2em;
+}
+
+.producto {
+  background: #6d1f1f;
+  border-radius: 10px;
+  width: 100%;
+  color: #fff0e3;
+  padding-bottom: 5px;
+  font-size: 0.7em;
+}
+.productos img {
+  object-fit: cover;
+  width: 100%;
+  height: 60%;
+  border-radius: 10px;
+}
+
+.producto button {
+  padding: 10px 20px;
+  background-color: #fff0e3;
+  color: #6d1f1f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.producto button:hover {
+  background-color: #a84342;
+  color: #fff0e3;
+  border: 1px solid #fff0e3;
+}
+.producto button:active {
+  background-color: #a84342;
+  color: #fff0e3;
+  border: 1px solid #fff0e3;
+}
+
+/*--------------------------------*/
+
+/*Familia*/
+
+.familia {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
