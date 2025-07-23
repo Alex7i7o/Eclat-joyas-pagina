@@ -272,3 +272,55 @@ div a:hover p {
   width: 100%;
   height: 100%;
 }
+
+/*--------------------------------*/
+
+/*Responsive*/
+
+@media (min-width: 600px) {
+  .contenedor_productos {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  }
+
+  .categorias {
+    margin-top: -70px;
+  }
+  
+  
+}
+
+@media (min-width: 1024px) {
+  section:first-child {
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+  }
+  .contenedor_productos {
+  display: flex;
+  }
+  .categorias {
+  width: 50%;
+  }
+.categorias .categoria {
+  height: 300px;
+  width: 200px;
+  }
+
+  header {
+  margin-top: 0px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  }
+
+  header nav {
+  border-radius: 10px 10px 10px 10px; 
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+}
