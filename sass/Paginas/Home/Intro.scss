@@ -1,0 +1,85 @@
+.intro {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 45% 1fr;
+    justify-content: center;
+    p {
+        justify-content: center;
+        margin: 0px;
+        strong {
+            font-family: "Dancing Script";
+        }
+    }    
+    p:first-child {
+        text-align: right;
+        font-size: 1.5em;
+        margin: 0px;
+    }
+    p:nth-child(2) {
+        font-size: 1.3em;
+        text-align: center;
+        margin: 0px;
+        margin-top: -10px;
+    }
+    p:nth-child(3) {
+        font-size: 3.5em;
+        margin: 0px;
+        padding-left: 0.3em;
+        text-align: left;
+        margin-top: -30px;
+    }
+
+    p:nth-child(4) {
+        font-size: 1.3em;
+        text-align: left;
+        padding-left: 0.5em;
+    }
+    p:nth-child(5) {
+        font-size: 1.3em;
+        text-align: center;
+        padding-right: 1em;
+        margin-top: -10px;
+    }
+    p:nth-child(6) {
+        font-size: 1.3em;
+        text-align: right;
+        padding-left: 0.5em;
+        margin-top: -10px;
+    }
+
+    button {
+        font-family: "Dancing Script";
+        font-size: 2em;
+        color: #3d1417;
+        background-color: #fff0e3;
+        padding: 5px 50px 10px 50px;
+        border-radius: 50px;
+        border: none;
+        transition: all 0.5s ease;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        &:hover {
+            background-color: #3d1417;
+            color: #fff0e3;
+            font-size: 1.5em;
+        }
+        &:active {
+            background-color: #3d1417;
+            color: #fff0e3;
+            font-size: 1.5em;
+        }
+    }
+
+    .contenedor_lia{
+        width: 100%;
+        overflow-x: clip;
+        position: relative;
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+        justify-content: end;
+        justify-items: end;
+        transform: scale(1.2) 
+    }
+}
